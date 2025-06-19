@@ -57,6 +57,7 @@ You can explore our [paid versions](https://www.usebruno.com/pricing) to see if 
   - [Run across multiple platforms 🖥️](#run-across-multiple-platforms-%EF%B8%8F)
   - [Collaborate via Git 👩‍💻🧑‍💻](#collaborate-via-git-)
 - [Important Links 📌](#important-links-)
+- [VS Code Extension](#vs-code-extension)
 - [Showcase 🎥](#showcase-)
 - [Share Testimonials 📣](#share-testimonials-)
 - [Publishing to New Package Managers](#publishing-to-new-package-managers)
@@ -123,6 +124,18 @@ Or any version control system of your choice
 - [Website](https://www.usebruno.com)
 - [Pricing](https://www.usebruno.com/pricing)
 - [Download](https://www.usebruno.com/downloads)
+
+## VS Code Extension
+
+Run Bruno directly inside Visual Studio Code with our extension. Build the web assets
+and then package the extension:
+
+```bash
+npm run build --workspace=packages/bruno-app
+npm run build --workspace=packages/bruno-vscode
+```
+
+After building, invoke the **Open Bruno** command from VS Code to launch the client in a tab.
 
 ## Showcase 🎥
 

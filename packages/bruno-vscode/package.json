@@ -1,0 +1,30 @@
+{
+  "name": "bruno-vscode",
+  "displayName": "Bruno",
+  "description": "Host the Bruno API client as a tab inside VS Code",
+  "version": "0.0.1",
+  "publisher": "usebruno",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:bruno.open"
+  ],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bruno.open",
+        "title": "Open Bruno"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "cp -r ../bruno-app/dist ./webapp"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0"
+  },
+  "dependencies": {}
+}
